@@ -15,7 +15,7 @@ const Plans = () => {
                 {plansData.map((plan, index) => (
                     <div key={index} className='plan'>
                         {plan.icon}
-                        <span>{plan.name}</span><span>$ {plan.price}</span>
+                        <span>{plan.name}</span><span>{plan.price} AED</span>
 
 
                         <div className="features">
