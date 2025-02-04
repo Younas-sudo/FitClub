@@ -56,3 +56,52 @@
     background-color: var(--orange);
     color: white;
 }
+
+.success-message {
+    margin-top: 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: var(--orange);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Join {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+        
+    }
+
+    .email-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.2rem;
+    }
+
+    .right-j>.email-container>input {
+        text-align: center;
+    }
+
+    .btn-j {
+        width: 100%;
+    }
+    .left-j>hr{
+        width: 20rem;
+    }
+}

@@ -16,12 +16,12 @@
     color: white;
 }
 
-.programs-categories{
+.programs-categories {
     display: flex;
     gap: 1rem;
 }
 
-.category{
+.category {
     display: flex;
     flex-direction: column;
     background-color: var(--gray);
@@ -58,11 +58,27 @@
     gap: 2rem;
 }
 
-.join-now>img{
+.join-now>img {
     width: 1rem;
 }
 
-.category:hover{
+.category:hover {
     background-color: var(--planCard);
     cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+
+    .programs-header{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .programs-categories{
+        flex-direction: column;
+    }
 }
